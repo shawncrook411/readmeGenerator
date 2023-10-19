@@ -1,19 +1,6 @@
 
 const fs = require('fs');
 const inquirer = require('inquirer');
-var answers = [];
-
-//title
-//description
-//table of contents //links
-//installation
-//usage
-//license
-//contributing
-//tests
-//questions
-//github profile / link
-//email
 
 function init() {
     inquirer.prompt([
@@ -33,7 +20,7 @@ function init() {
             message:'How do you use this project?',
             name:'usage',
         },{
-            type: 'rawlist', //  CHANGE TO LIST
+            type: 'rawlist',
             message:'Which license will you be using?',
             choices: [
                 {name: 'Apache', value: 'Apache'},
@@ -67,7 +54,7 @@ function init() {
     .then((response) => {       
         const {title, description, install, usage, license, contribute, tests, questions, github, email} = response      
         switch(license)
-        {
+        {            
             case 'Apache':
                 badge = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
             break            
@@ -91,10 +78,9 @@ function init() {
             case 'Mozilla Public License':
                 badge = '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)'
             break
-
-
         }
-        data = 
+
+data = 
 `# ${title}
 ## Table of Contents:
 [Description](#description)\n
@@ -121,9 +107,7 @@ ${tests}
 ${questions}
 You can reach me at this email address ${email} and I'll answer you shortly
 Also you can visit my github profile here: [${github}'s GitHub](https://github.com/${github}) to see more of my work.`
-
-        // TODO: Create a function to write README file
-        // function writeToFile(fileName, data) {}
+        
         file = fs.writeFile('xREADME.md', data, 
             (err) => err ? console.error(err) : console.log('Success!'));
 
