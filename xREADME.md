@@ -1,4 +1,4 @@
-# README Generator
+# Note Taker - Heroku
 ## Table of Contents:
 [Description](#description)
 
@@ -15,20 +15,20 @@
 [Questions?](#questions?)
 
 ## Description
-This application is useful to creating new README.md files. It walks you through the process, asking the user questions, which they can then simply fill in and the program will create the  file for you 
+This simple application lets you display a list of your notes (including a title and a text area for each), let's you write/post new notes to add to the list, and delete notes once they've been taken care of and are no longer needed 
 ## Installation
-To install, clone the repository down to your local machine. Then run the command 'npm inquirer@8.2.4' from the location of the local repo. Then run 'node index.js' to run the program locally and follow the prompts. After you will have a file called 'xREADME.md' which you can then rename and move to where you need it 
+No need to install, simply visit the live heroku URL: https://note-taker-shawncrook-3244bd11af4a.herokuapp.com/notes.html 
 ## Usage
-You can use it to create your own README.md files by running index.js using node and following the user prompts. You are able to select a license to use however not every license out there is an option only six of some of the more common ones are. 
+To use, go the the URL. From there the website is live and you can access. After navigating off of the main page you can type on the right hand side the title of your new note and and text to accompany it. Once both fields have been filled out push the save note button and it would save the note in the database. You can then delete that note from the area on the left hand side by pressing it's accompanying button
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This project is licensed under the terms of the MIT License license
 ## Contributing
-You can fork the repository from [Repo Link](https://github.com/shawncrook411/readmeGenerator) and can then submit pull requests from your forked repo 
+No need to contribute 
 ## Tests 
-To test it, simply run the program in node, and follow the prompts! Test if each of the license badges appear, and if the links in the table of contents work properly. See the preview of your readme to see if it is formatted correctly 
+No tests have been created, but feel free to check and see if 1) all the saved notes display on the left side. 2) when saving a new note it then displays on the left side. 3) when deleting the note it then no longer appears 
 ## Questions? 
-Email is preferred.
+Contacting me at my email is probably best
 You can reach me at this email address shawncrook411@gmail.com and I'll answer you shortly
 Also you can visit my github profile here: [shawncrook411's GitHub](https://github.com/shawncrook411) to see more of my work.
